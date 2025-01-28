@@ -1,0 +1,80 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Container Styling */
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading Styling */
+h1 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Joke Text Styling */
+#joke {
+    color: #555;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+#btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+#btn:hover {
+    background-color: #45a049;
+}
+
+/* Button Active Effect */
+#btn:active {
+    background-color: #3e8e41;
+}
+
+/* Animation for "Fetching joke..." text */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#joke {
+    animation: fadeIn 1s ease-in-out;
+}
