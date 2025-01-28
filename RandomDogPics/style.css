@@ -1,0 +1,86 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 90%;
+    width: 400px;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Image Styles */
+#dogImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#dogImage:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styles */
+#fetchpicbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+#fetchpicbtn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+#fetchpicbtn:active {
+    background-color: #388e3c;
+    transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    #fetchpicbtn {
+        font-size: 1rem;
+    }
+}
